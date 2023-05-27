@@ -7,8 +7,11 @@
   max-width: 400px;
   margin: 0 auto;
   padding: 20px;
-  background: #f2f2f2;
-  border-radius: 5px;
+  background: black;
+  color: white;
+  border-radius: 15px;
+  margin-top: 50px;
+  font-family: sans-serif;
 }
 
 h2 {
@@ -34,30 +37,47 @@ input[type="password"] {
 
 button {
   padding: 10px 20px;
-  background: #4CAF50;
+  background: rgb(212, 78, 78);
   color: #fff;
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  text-align: center;
+  margin-left: 40%;
+  align-items: center;
 }
 
 button:hover {
   background: #45a049;
 }
-
+body{
+  background-image: url(bg.jpg);
+}
   </style>
 </head>
 <body>
     <div class="container">
-        <h2>SININ</h2>
+        <h2>SIN IN</h2>
         <form action="login.php" method="post" onsubmit="return validateForm()">
           <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstrname" name="firstname" required>
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="mail" name="email" required>
           </div>
           <div class="form-group">
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Re-Enter Password</label>
+            <input type="password" id="password" name="re-password" required>
           </div>
           <div class="form-group">
             <button type="submit">Sign In</button>
