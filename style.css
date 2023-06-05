@@ -137,4 +137,7 @@ body {
   .login-box a:hover {
     color: #39dc79;
   }
-   
+.image{
+  width: 100%;
+  height: 300px;
+}   
